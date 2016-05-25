@@ -20,6 +20,7 @@ body {
 /*
 	Theme
 */
+
 .primary {
 	background-color: #4caf50;
 	color: #FFFFFF;
@@ -132,17 +133,14 @@ body {
    margin-right: auto;
    border-style: solid;
 
-   
    -moz-box-shadow:    3px 3px 5px 0px #ccc;
 	-webkit-box-shadow: 3px 3px 5px 0px #ccc;
 	box-shadow:         3px 3px 5px 0px #ccc;
 }
-.center-valign {
+.bio-text {
 	display: flex;
 	align-items: center;
 	min-height: 200px;
-}
-.bio-text {
 	text-align: justify;
 }
 
@@ -159,14 +157,12 @@ body {
 .tech-icons > a, .tech-icons > a:visited, .tech-icons > a:hover, .tech-icons > a:active {
 	color: inherit;
 	text-decoration: none;
-}	
-
+}
 .tech-icons > * {
 	border-radius: 50%;
 	width: 75px;
 	height: 75px;
 	background-color: #ffffff;
-	
 	margin: 3px;
 	
 	display: flex;
@@ -235,7 +231,6 @@ body {
 	font-size: 190%;
 	padding 50px;
 }
-
 .fcc-paren {
 	margin-top: -30px;
 	font-size: 230%;
