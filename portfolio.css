@@ -1,7 +1,6 @@
 body {
-	background-image: url(files/tileable-midnight-blue-grunge-patterns-4.jpg);
-   background-color: LightSteelBlue;
    font-size: 18px;
+   background-color: #B6B6B6;
 }
 
 /* 
@@ -14,7 +13,7 @@ body {
 .anchor {
 	display: block; 
 	position: relative; 
-	top: -90px; 
+	top: -40px; 
 	visibility: hidden;
 }
 
@@ -24,6 +23,13 @@ body {
 .primary {
 	background-color: #4caf50;
 	color: #FFFFFF;
+	
+	-moz-box-shadow:    3px 3px 5px 6px #ccc;
+	-webkit-box-shadow: 3px 3px 5px 6px #ccc;
+	box-shadow:         3px 3px 5px 6px #ccc;
+		
+	position: relative;
+   z-index: 10;
 }
 .dark-primary {
 	background-color: #388e3c;
@@ -32,14 +38,33 @@ body {
 .light-primary {
 	background-color: #c8e6c9;
 	color: #212121;
+	
+	-moz-box-shadow:    3px 3px 5px 0px #ccc;
+	-webkit-box-shadow: 3px 3px 5px 0px #ccc;
+	box-shadow:         3px 3px 5px 0px #ccc;
+	
+	position: relative;
+   z-index: 5;
 }
-.shadow {
-  -moz-box-shadow:    3px 3px 5px 6px #ccc;
-  -webkit-box-shadow: 3px 3px 5px 6px #ccc;
-  box-shadow:         3px 3px 5px 6px #ccc;
+.regular {
+	background-color: #FFFFFF;
+	color: #212121;
+		
+	position: relative;
+   z-index: 2;
+}
+.primary  .header > hr, .dark-primary  .header > hr {
+	/* Set the hr color */
+	color: #FFFFFF; /* old IE */
+	background-color: #FFFFFF; /* Modern Browsers */
+}
+.light-primary  .header > hr, .regular .header > hr {
+	/* Set the hr color */
+	color: #212121; /* old IE */
+	background-color: #212121; /* Modern Browsers */
 }
 .navbar-inverse .navbar-brand, .navbar-inverse .navbar-nav > li > a {
-    color:#c8e6c9;
+	color:#c8e6c9;
 }
 
 /*
@@ -48,17 +73,19 @@ body {
 
 .contents {
 	padding: 3px;
+	max-width: 1096px;
+	margin: 0px auto 0px auto;
+	background-color: #ffffff;
 }
 .first {
-	margin: 100px auto 50px auto;
+	margin: 40px auto 0px auto;
 }
 .non-first {
-	margin: 50px auto 50px auto;
+	margin: 0px auto 0px auto;
 }
 .square {
-   background-color: white;
-   max-width: 1024px;
    padding: 10px;
+   max-width: 1024px;
 }
 .row-box {
 	display: flex;
@@ -85,10 +112,6 @@ body {
 	
 	/* src:http://stackoverflow.com/questions/4151743/how-i-change-the-thickness-of-my-hr-tag */
 	border: none;
-	
-	/* Set the hr color */
-	color: black; /* old IE */
-	background-color: black; /* Modern Browsers */
 }
 .title > hr {
 	height: 3px;
@@ -107,6 +130,12 @@ body {
 	border-radius: 50%;
 	margin-left: auto;
    margin-right: auto;
+   border-style: solid;
+
+   
+   -moz-box-shadow:    3px 3px 5px 0px #ccc;
+	-webkit-box-shadow: 3px 3px 5px 0px #ccc;
+	box-shadow:         3px 3px 5px 0px #ccc;
 }
 .center-valign {
 	display: flex;
@@ -128,17 +157,34 @@ body {
 	text-align: justify;
 }
 .tech-icons > a, .tech-icons > a:visited, .tech-icons > a:hover, .tech-icons > a:active {
-  color: inherit;
-  text-decoration: none;
+	color: inherit;
+	text-decoration: none;
+}	
+
+.tech-icons > * {
+	border-radius: 50%;
+	width: 75px;
+	height: 75px;
+	background-color: #ffffff;
+	
+	margin: 3px;
+	
+	display: flex;
+	justify-content: center;
+	align-items: center;	
+	
+	-moz-box-shadow:    3px 3px 5px 0px #ccc;
+	-webkit-box-shadow: 3px 3px 5px 0px #ccc;
+	box-shadow:         3px 3px 5px 0px #ccc;
 }
-.tech-icon {
-	margin: 0px 10px 0px 10px;
+.tech-icons > * > * {
+	margin: auto;
 }
-span.tech-icon {
-	font-size: 60px;
+.tech-icons > * > span {
+	font-size: 50px;
 }
-img.tech-icon {
-	width: 60px;
+.tech-icons > * > img {
+	width: 50px;
 	height: auto;
 	
 	/* src:http://stackoverflow.com/questions/609273/convert-an-image-to-grayscale-in-html-css */
@@ -160,7 +206,6 @@ img.tech-icon {
 
 .project {
 	margin: 10px;
-	background-color: darkslategrey;
 	border-radius: 3px;
 }
 .project-img {
@@ -168,7 +213,6 @@ img.tech-icon {
 }
 .project-text {
 	padding: 10px;
-	color: white;
 	text-align: center;
 }
 
@@ -206,7 +250,9 @@ img.tech-icon {
 
 .credits-text {
 	text-align: center;
-	color: white;
+}
+.legalese {
+	font-size: 12px;
 }
 .outer-link:link {
 	color: yellow;
