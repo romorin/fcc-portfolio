@@ -1,9 +1,11 @@
 body {
    font-size: 18px;
    background-color: #B6B6B6;
+   position: relative;
+   height: 100%;
 }
 
-/* 
+/*
 	Navigation
 */
 
@@ -11,9 +13,8 @@ body {
 	max-width: 1024px;
 }
 .anchor {
-	display: block; 
-	position: relative; 
-	top: -40px; 
+	display: block;
+	top: -40px;
 	visibility: hidden;
 }
 
@@ -24,13 +25,13 @@ body {
 .primary {
 	background-color: #4caf50;
 	color: #FFFFFF;
-	
+
 	-moz-box-shadow:    3px 3px 5px 6px #ccc;
 	-webkit-box-shadow: 3px 3px 5px 6px #ccc;
 	box-shadow:         3px 3px 5px 6px #ccc;
-		
-	position: relative;
+
    z-index: 10;
+   position:relative;
 }
 .dark-primary {
 	background-color: #388e3c;
@@ -39,19 +40,18 @@ body {
 .light-primary {
 	background-color: #c8e6c9;
 	color: #212121;
-	
+
 	-moz-box-shadow:    3px 3px 5px 0px #ccc;
 	-webkit-box-shadow: 3px 3px 5px 0px #ccc;
 	box-shadow:         3px 3px 5px 0px #ccc;
-	
-	position: relative;
+
    z-index: 5;
+   position:relative;
 }
 .regular {
 	background-color: #FFFFFF;
 	color: #212121;
-		
-	position: relative;
+
    z-index: 2;
 }
 .primary  .header > hr, .dark-primary  .header > hr {
@@ -110,7 +110,7 @@ body {
 .header > hr {
 	flex:1;
 	margin: 20px;
-	
+
 	/* src:http://stackoverflow.com/questions/4151743/how-i-change-the-thickness-of-my-hr-tag */
 	border: none;
 }
@@ -166,11 +166,11 @@ body {
 	height: 75px;
 	background-color: #ffffff;
 	margin: 3px;
-	
+
 	display: flex;
 	justify-content: center;
-	align-items: center;	
-	
+	align-items: center;
+
 	-moz-box-shadow:    3px 3px 5px 0px #ccc;
 	-webkit-box-shadow: 3px 3px 5px 0px #ccc;
 	box-shadow:         3px 3px 5px 0px #ccc;
@@ -184,7 +184,7 @@ body {
 .tech-icons > * > img {
 	width: 50px;
 	height: auto;
-	
+
 	/* src:http://stackoverflow.com/questions/609273/convert-an-image-to-grayscale-in-html-css */
 	filter: gray; /* IE6-9 */
 	filter: grayscale(1); /* Microsoft Edge and Firefox 35+ */
