@@ -172,11 +172,8 @@ body {
 	vertical-align: middle;
 	position: relative;
 }
-.tech-icons > * > * {
-	margin-top: 10px;
-}
-
 .tech-icons span {
+	margin-top: 10px;
 	font-size: 50px;
 }
 .tech-icons img {
@@ -188,11 +185,6 @@ body {
 	left: 50%;
 
 	margin: -25px 0 0 -25px;
-
-	/* src:http://stackoverflow.com/questions/609273/convert-an-image-to-grayscale-in-html-css */
-	filter: gray; /* IE6-9 */
-	filter: grayscale(1); /* Microsoft Edge and Firefox 35+ */
-	-webkit-filter: grayscale(1); /* Google Chrome, Safari 6+ & Opera 15+ */
 }
 .tech-label {
 	display: flex;
