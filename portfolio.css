@@ -10,7 +10,7 @@ body {
 */
 
 .navbar > * {
-	max-width: 1024px;
+	max-width: 1150px;
 }
 .anchor {
 	display: block;
@@ -54,16 +54,19 @@ body {
 
    z-index: 2;
 }
+
+/* Set the hr color */
 .primary  .header > hr, .dark-primary  .header > hr {
-	/* Set the hr color */
+	border-color: #FFFFFF;
 	color: #FFFFFF; /* old IE */
 	background-color: #FFFFFF; /* Modern Browsers */
 }
 .light-primary  .header > hr, .regular .header > hr {
-	/* Set the hr color */
+	border-color: #212121;
 	color: #212121; /* old IE */
 	background-color: #212121; /* Modern Browsers */
 }
+
 .navbar-inverse .navbar-brand, .navbar-inverse .navbar-nav > li > a {
 	color:#c8e6c9;
 }
@@ -74,19 +77,19 @@ body {
 
 .contents {
 	padding: 3px;
-	max-width: 1096px;
+	max-width: 1150px;
 	margin: 0px auto 0px auto;
 	background-color: #ffffff;
 }
 .first {
-	margin: 40px auto 0px auto;
+	margin: 40px auto 40px auto;
 }
 .non-first {
-	margin: 0px auto 0px auto;
+	margin: 40px auto 0px auto;
 }
 .square {
    padding: 10px;
-   max-width: 1024px;
+   max-width: 1100px;
 }
 .row-box {
 	display: flex;
@@ -110,15 +113,11 @@ body {
 .header > hr {
 	flex:1;
 	margin: 20px;
-
-	/* src:http://stackoverflow.com/questions/4151743/how-i-change-the-thickness-of-my-hr-tag */
-	border: none;
 }
 .title > hr {
+	/* src:http://stackoverflow.com/questions/4151743/how-i-change-the-thickness-of-my-hr-tag */
+	border: none;
 	height: 3px;
-}
-.subtitle > hr {
-	height: 1px;
 }
 
 /*
@@ -151,10 +150,8 @@ body {
 */
 
 .tech-icons {
-	justify-content: center;
-	margin-top: 30px;
-	margin-bottom: 30px;
-	text-align: justify;
+	margin: 30px auto;
+	text-align: center;
 }
 .tech-icons > a, .tech-icons > a:visited, .tech-icons > a:hover, .tech-icons > a:active {
 	color: inherit;
@@ -167,23 +164,30 @@ body {
 	background-color: #ffffff;
 	margin: 3px;
 
-	display: flex;
-	justify-content: center;
-	align-items: center;
-
 	-moz-box-shadow:    3px 3px 5px 0px #ccc;
 	-webkit-box-shadow: 3px 3px 5px 0px #ccc;
 	box-shadow:         3px 3px 5px 0px #ccc;
+
+	display: inline-block;
+	vertical-align: middle;
+	position: relative;
 }
 .tech-icons > * > * {
-	margin: auto;
+	margin-top: 10px;
 }
-.tech-icons > * > span {
+
+.tech-icons span {
 	font-size: 50px;
 }
-.tech-icons > * > img {
+.tech-icons img {
 	width: 50px;
 	height: auto;
+
+	position: absolute;
+	top: 50%;
+	left: 50%;
+
+	margin: -25px 0 0 -25px;
 
 	/* src:http://stackoverflow.com/questions/609273/convert-an-image-to-grayscale-in-html-css */
 	filter: gray; /* IE6-9 */
