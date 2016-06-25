@@ -7,15 +7,22 @@
 
 		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
 		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.0/css/font-awesome.min.css">
+		<link href='https://fonts.googleapis.com/css?family=Ubuntu:400,500' rel='stylesheet' type='text/css'>
 
 		<script type="text/javascript" src="https://code.jquery.com/jquery-2.2.3.min.js"></script>
 		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
 
 		<link rel="stylesheet" href="portfolio.css">
+		<script type="text/javascript" src="portfolio.js"></script>
 	</head>
 	<body data-spy="scroll" data-target="#navbar-portfolio">
+		<!-- hero -->
+		<section id="s-me" class="hero">
+			<div class="my-name">Robert Morin</div>
+			<div class="my-title">programmer</div>
+		</section>
 		<!-- bar -->
-		<nav id="header" class="navbar navbar-inverse navbar-fixed-top dark-primary">
+		<nav id="header" class="navbar navbar-default navbar-static-top">
 			<div class="container-fluid">
 				<div class="navbar-header">
 					<!-- collapsable button -->
@@ -27,128 +34,50 @@
 			        <span class="icon-bar"></span>
 			      </button>
 					<!-- name -->
-					<a class="navbar-brand" href="#">Robert Morin</a>
+					<a class="navbar-brand" href="#">romorin.com</a>
 				</div>
 				<!-- links -->
 				<div class="collapse navbar-collapse" id="navbar-portfolio">
 					<ul class="nav navbar-nav navbar-right" role="tablist">
 						<li><a href="#about">About</a></li>
-						<li><a href="#projects">Projects</a></li>
 						<li><a href="#tech">Tech</a></li>
+						<li><a href="#projects">Projects</a></li>
 						<li><a href="#contact">Contact</a></li>
 					</ul>
 				</div>
 			</div>
 		</nav>
 		<!-- about -->
-		<div class="contents">
-			<a class="anchor" id="about"></a>
-			<section class="first square primary">
-				<div class="header title">
-					<hr/><h2>Robert Morin</h2><hr/>
-				</div>
-				<div class="container-fluid">
-					<div class="row">
-						<!-- pic -->
-						<div class="title-col col-xs-12 col-sm-3">
-							<img class="img-responsive portrait" src="https://dl.dropboxusercontent.com/s/rxxji1n7lq53yee/me-t.jpg" alt="My picture" />
-						</div>
-						<!-- bio -->
-						<p class="title-col col-xs-12 col-sm-9 bio-text">
-							Hello! I hold a degree in computer engineering. I been mostly away from the field for the past few years,
-							so	I am currently brushing up my skills; by participating to Free Code Camp, doing personal projects and various readings.
-						</p>
-					</div>
-				</div>
-			</section>
-			<!-- projects -->
-			<a class="anchor" id="projects"></a>
-			<section class="non-first square regular">
-				<div class="header title">
-					<hr/><h2>My projects</h2><hr/>
-				</div>
-				<div class="header subtitle">
-					<hr/><h4>From FreeCodeCamp</h4><hr/>
-				</div>
-				<div class="container-fluid">
-					<div class="row">
-						<div class="col-xs-12 col-sm-6">
-							<figure class="project primary">
-								<a href="http://codepen.io/romorin/full/EKoaxK/" >
-									<img class="img-responsive project-img" src="https://dl.dropboxusercontent.com/s/m1ihvpi54srpx1g/tribute-screenshot-t.png" alt="Tribute screenshot" />
-								</a>
-								<figcaption class="project-text">Tribute project.</figcaption>
-							</figure>
-						</div>
-						<div class="col-xs-12 col-sm-6">
-							<figure class="project primary">
-								<a href="http://codepen.io/romorin/full/NrKaOy/" >
-									<img class="img-responsive project-img" src="https://dl.dropboxusercontent.com/s/agg1q1hfh0t5k6h/portfolio-screenshot-t.png" alt="Portfolio screenshot" />
-								</a>
-								<figcaption class="project-text">This Page!</figcaption>
-							</figure>
-						</div>
-					</div><div class="row">
-						<div class="col-xs-12 col-sm-6">
-							<figure class="project primary">
-								<a href="http://codepen.io/romorin/full/vGrBba/" >
-									<img class="img-responsive project-img" src="https://dl.dropboxusercontent.com/s/riik67s5uw8zc9j/quote-screenshot-t.png" alt="Quote machine screenshot" />
-								</a>
-								<figcaption class="project-text">Quote machine project.</figcaption>
-							</figure>
-						</div>
-						<div class="col-xs-12 col-sm-6">
-							<figure class="project primary">
-								<a href="http://codepen.io/romorin/full/YWzMvO/" >
-									<img class="img-responsive project-img" src="https://dl.dropboxusercontent.com/s/o9tzg3unn411xws/weather-screenshot-t.png" alt="Weather page screenshot" />
-								</a>
-								<figcaption class="project-text">Weather project.</figcaption>
-							</figure>
-						</div>
-					</div><div class="row">
-						<div class="col-xs-12 col-sm-6">
-							<figure class="project primary">
-								<img class="img-responsive project-img" src="http://placehold.it/800x400" alt="placeholder"/>
-								<figcaption class="project-text">More to come!</figcaption>
-							</figure>
-						</div>
-					</div>
-				</div>
-				<div class="header subtitle">
-					<hr/><h4>Misc</h4><hr/>
-				</div>
-				<div class="container-fluid">
-					<div class="row">
-						<div class="col-xs-12 col-sm-6">
-							<div class="project primary">
-								<img class="img-responsive project-img" src="http://placehold.it/800x400" alt="placeholder"/>
-								<p class="project-text">Coming soon!</p>
-							</div>
-						</div>
-					</div>
-				</div>
-			</section>
-			<!-- tech -->
-			<a class="anchor" id="tech"></a>
-			<section class="non-first square light-primary">
-				<div class="header title">
-					<hr/><h2>Tech</h2><hr/>
-				</div>
-				<div class="responsive-container">
-					<div class="row">
-						<div class="col-xs-12 col-sm-7 tech-icons">
+		<a class="anchor" id="about"></a>
+		<section id="s-summary" class="primary">
+			<img class="img-responsive" src="https://dl.dropboxusercontent.com/s/rxxji1n7lq53yee/me-t.jpg" alt="My picture" />
+			<p>Previously graduated in computer engineering with high marks.</p>
+			<p>Back on the coding scene and learning fast.</p>
+			<p>Evidence below <span class="fa fa-arrow-down" title="down-arrow"></span></p>
+		</section>
+				<!-- tech -->
+		<a class="anchor" id="tech"></a>
+		<section>
+			<div class="header title">
+				<hr/><h2>Learnings</h2><hr/>
+			</div>
+			<div class="responsive-container">
+				<div class="row">
+					<div class="col-xs-12 col-sm-6 tech-category">
+						<div id="tech1" class="tech-icons">
 							<a href="https://www.w3.org/html/"><span class="fa fa-html5" title="html5"></span></a>
 							<a href="https://www.w3.org/Style/CSS/"><span class="fa fa-css3" title="css3"></span></a>
 							<!-- JS icon by Icons8 -->
 							<a href="https://developer.mozilla.org/en-US/docs/Web/javascript"><img src="https://maxcdn.icons8.com/iOS7/PNG/75/Files/JS-75.png" title="JS" alt="JS"/></a>
 							<a href="http://jquery.com/"><img src="https://dl.dropboxusercontent.com/s/ydq7pq90v3uqtsz/jquery-icon.png" title="jquery" alt="jquery" /></a>
 							<a href="http://getbootstrap.com/"><img src="https://dl.dropboxusercontent.com/s/ne75c0743wv4bne/Boostrap_logo.png" title="bootstrap" alt="bootstrap" /></a>
-						</div>
-						<p class="col-xs-12 col-sm-5 tech-label">These are the one that I used so far in Free Code Camp. Go to the project section if you want to see some examples.</p>
-					</div>
-					<div class="row">
-						<div class="col-xs-12 col-sm-7 tech-icons">
 							<a href="https://www.gnu.org/software/bash/"><span title="bash">#!</span></a>
+						</div>
+						<hr/>
+						<p>These I most recently used in my published projects, with Free Code Camp or not. See up for details.</p>
+					</div>
+					<div class="col-xs-12 col-sm-6 tech-category">
+						<div id="tech2" class="tech-icons">
 							<!-- Python icon by Icons8 -->
 							<a href="https://www.python.org/"><img src="https://maxcdn.icons8.com/windows8/PNG/64/Logos/python-64.png" title="Python" alt="Python"/></a>
 							<!-- Java Coffee Cup Logo icon by Icons8 -->
@@ -159,10 +88,11 @@
 							<!-- XML icon by Icons8 -->
 							<a href="https://www.w3.org/XML/"><img src="https://maxcdn.icons8.com/iOS7/PNG/50/Files/XML-50.png" title="XML" alt="XML"/></a>
 						</div>
-						<p class="col-xs-12 col-sm-5 tech-label">These I last used in personal projects over the years, which will be put in the project section as I adapt them.</p>
+						<hr/>
+						<p>These I last used in personal projects over the years, but not yet published. Work will be done to adapt them and put them on my github or my website.</p>
 					</div>
-					<div class="row">
-						<div class="col-xs-12 col-sm-7 tech-icons">
+					<div class="col-xs-12 col-sm-6 tech-category">
+						<div id="tech3" class="tech-icons">
 							<a href="http://www.microsoft.com/en-us/windows/Default.aspx"><span class="fa fa-windows" title="windows"></span></a>
 							<!-- Free icons by Icons8 -->
 							<a href="https://www.freebsd.org/"><img src="https://maxcdn.icons8.com/windows8/PNG/64/Operating_Systems/free_bsd-64.png" title="Free BSD" alt="Free BSD" /></a>
@@ -170,48 +100,110 @@
 							<!-- Debian icon by Icons8 -->
 							<a href="https://www.debian.org/"><img src="https://maxcdn.icons8.com/iOS7/PNG/75/Network/debian-75.png" title="Debian" alt="Debian" /></a>
 							<a href="https://www.gentoo.org/"><img src="https://dl.dropboxusercontent.com/s/g7qts7vpja4c8mm/Gentoo-logo-dark.png" title="Gentoo" alt="Gentoo" /></a>
-							<span title="etc">...</span>
+							<div><span title="etc">...</span></div>
 						</div>
-						<p class="col-xs-12 col-sm-5 tech-label">I'm a distro hopper, always trying new operating systems / distributions.</p>
+						<hr/>
+						<p>I'm a distro hopper, always trying new operating systems / distributions.</p>
 					</div>
-					<div class="row">
-						<div class="col-xs-12 col-sm-7 tech-icons">
+					<div class="col-xs-12 col-sm-6 tech-category">
+						<div id="tech4" class="tech-icons">
 							<!-- C Plus Plus icon by Icons8 -->
 							<a href="https://isocpp.org/"><img src="https://maxcdn.icons8.com/iOS7/PNG/75/Files/C_plus_plus-75.png" title="C Plus Plus" alt="C++" /></a>
 							<!-- CS icon by Icons8 -->
 							<a href="https://en.wikipedia.org/wiki/C_Sharp_%28programming_language%29"><img src="https://maxcdn.icons8.com/iOS7/PNG/75/Files/cs-75.png" title="CS" alt="C#" /></a>
 							<a href="https://en.wikipedia.org/wiki/VHDL"><img src="https://dl.dropboxusercontent.com/s/j8hxg9sfmm694bn/vhdl_logo.png" title="VHDL" alt="VHDL" /></a>
 						</div>
-						<p class="col-xs-12 col-sm-5 tech-label">These I have not used since school; to do stuff using these languages is in my plans.</p>
+						<hr/>
+						<p>These I have not used since school; to do stuff using these languages is in my plans.</p>
 					</div>
 				</div>
-			</section>
-			<!-- contact -->
-			<a class="anchor" id="contact"></a>
-			<section class="non-first square regular">
-				<div class="header title">
-					<hr/><h2>Contact</h2><hr/>
+			</div>
+		</section>
+		<!-- projects -->
+		<a class="anchor" id="projects"></a>
+		<section class="alt-colors">
+			<div class="header title">
+				<hr/><h2>My Stuff</h2><hr/>
+			</div>
+			<div class="container-fluid">
+				<div class="row">
+					<div class="col-xs-12 col-sm-6">
+						<figure class="project">
+							<a href="http://codepen.io/romorin/full/YWzMvO/" >
+								<img class="img-responsive" src="https://dl.dropboxusercontent.com/s/o9tzg3unn411xws/weather-screenshot-t.png" alt="Weather page screenshot" />
+								<div class="is-hidden blurry"></div>
+								<figcaption class="is-hidden">Weather project.</figcaption>
+							</a>
+						</figure>
+					</div>
+					<div class="col-xs-12 col-sm-6">
+						<figure class="project">
+							<a href="http://codepen.io/romorin/full/vGrBba/" >
+								<img class="img-responsive" src="https://dl.dropboxusercontent.com/s/riik67s5uw8zc9j/quote-screenshot-t.png" alt="Quote machine screenshot" />
+								<div class="is-hidden blurry"></div>
+								<figcaption class="is-hidden">Quote machine project.</figcaption>
+							</a>
+						</figure>
+					</div>
+					<div class="col-xs-12 col-sm-6">
+						<figure class="project">
+							<a href="http://codepen.io/romorin/full/NrKaOy/" >
+								<img class="img-responsive" src="https://dl.dropboxusercontent.com/s/agg1q1hfh0t5k6h/portfolio-screenshot-t.png" alt="Portfolio screenshot" />
+								<div class="is-hidden blurry"></div>
+								<figcaption class="is-hidden">This Page!</figcaption>
+							</a>
+						</figure>
+					</div>
+					<div class="col-xs-12 col-sm-6">
+						<figure class="project">
+							<a href="http://codepen.io/romorin/full/EKoaxK/" >
+								<img class="img-responsive" src="https://dl.dropboxusercontent.com/s/m1ihvpi54srpx1g/tribute-screenshot-t.png" alt="Tribute screenshot" />
+								<div class="is-hidden blurry"></div>
+								<figcaption class="is-hidden">Tribute project.</figcaption>
+							</a>
+						</figure>
+					</div>
+					<div class="col-xs-12 col-sm-6">
+						<figure class="project">
+							<img class="img-responsive" src="http://placehold.it/800x400" alt="placeholder"/>
+							<div class="is-hidden blurry"></div>
+							<figcaption class="is-hidden">More to come!</figcaption>
+						</figure>
+					</div>
 				</div>
-				<p class="contact-text">You can see me around the web, only click on these below. Or you can send me a mail, and I will try to join you as soon as I can.</p>
-				<!-- social -->
-				<div class="row-box social-block">
-					<div><a class="social-link" href="https://github.com/romorin" title="github"><span class="icon fa fa-github"></span></a></div>
-					<div><a class="social-link" href="http://codepen.io/romorin/" title="codepen"><span class="icon fa fa-codepen"></span></a></div>
-					<div><a class="social-link" href="http://www.freecodecamp.com/romorin" title="freeCodeCamp"><span class="fcc-paren">(</span><span class="icon fa fa-fire"></span><span class="fcc-paren">)</span></a></div>
-					<div><a class="social-link" href="mailto:romorin@zoho.com" title="email"><span class="icon fa fa-envelope"></span></a></div>
+			</div>
+		</section>
+		<!-- contact -->
+		<a class="anchor" id="contact"></a>
+		<section>
+			<div class="header title">
+				<hr/><h2>Contact me</h2><hr/>
+			</div>
+			<div class="responsive-container">
+				<div class="row">
+					<div class="col-x2-12 col-sm-6 col-sm-offset-3 tech-category">
+						<div id="contacts" class="tech-icons">
+							<a class="social-link" href="https://github.com/romorin" title="github"><span class="icon fa fa-github"></span></a>
+							<a class="social-link" href="http://codepen.io/romorin/" title="codepen"><span class="icon fa fa-codepen"></span></a>
+							<a class="social-link" href="http://www.freecodecamp.com/romorin" title="freeCodeCamp"><span class="fcc-paren">(</span><span class="icon fa fa-fire"></span><span class="fcc-paren">)</span></a>
+							<a class="social-link" href="mailto:romorin@zoho.com" title="email"><span class="icon fa fa-envelope"></span></a>
+						</div>
+						<hr/>
+						<p>You can see me around the web, only click on these above. Or you can send me a mail, and I will try to join you as soon as I can.</p>
+					</div>
 				</div>
-			</section>
-			<!-- credits -->
-			<footer class="non-first square dark-primary">
-				<p class="credits-text">
-					Credits Robert Morin - 2016. <br/>
-			   </p>
-			   <p class="legalese credits-text">
-					<a class="outer-link" href="https://icons8.com">Icon pack by Icons8</a><br/>
-					Gentoo logo is a trademark from the <a class="outer-link" href="https://www.gentoo.org/">Gentoo Foundation</a>, Inc <br/>
-					created by Lennart Andre Rolland and Gentoo Foundation, Inc., licensed under <a class="outer-link" href="http://creativecommons.org/licenses/by-sa/2.5/">CC-BY-SA/2.5</a><br/>
-				</p>
-		   </footer>
-	   </div>
+			</div>
+		</section>
+		<!-- credits -->
+		<footer class="alt-colors">
+			<p class="credits-text">
+				Credits Robert Morin - 2016. <br/>
+		   </p>
+		   <p class="legalese credits-text">
+				<a class="outer-link" href="https://icons8.com">Icon pack by Icons8</a><br/>
+				Gentoo logo is a trademark from the <a class="outer-link" href="https://www.gentoo.org/">Gentoo Foundation</a>, Inc <br/>
+				created by Lennart Andre Rolland and Gentoo Foundation, Inc., licensed under <a class="outer-link" href="http://creativecommons.org/licenses/by-sa/2.5/">CC-BY-SA/2.5</a><br/>
+			</p>
+	   </footer>
 	</body>
 </html>
