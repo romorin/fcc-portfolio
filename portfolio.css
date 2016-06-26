@@ -32,9 +32,10 @@ body {
 	max-width: 1150px;
 }
 .anchor {
-	display: block;
-	top: -40px;
 	visibility: hidden;
+
+	margin-top: -30px;
+	padding-top: 30px;
 }
 
 /*
