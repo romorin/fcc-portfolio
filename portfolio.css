@@ -34,8 +34,12 @@ body {
 .anchor {
 	visibility: hidden;
 
-	margin-top: -30px;
-	padding-top: 30px;
+	margin-top: -40px;
+	padding-top: 40px;
+}
+.navbar-brand > a, .navbar-brand > a:visited, .navbar-brand > a:hover, .navbar-brand > a:active {
+	color: inherit;
+	text-decoration: none;
 }
 
 /*
