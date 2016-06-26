@@ -159,6 +159,26 @@ body {
 
 	z-index: 1;
 }
+.link-line {
+	font-size: 30px;
+	margin-top: 10px;
+}
+.link-line > a {
+	padding: 10px;
+	text-decoration: none;
+}
+.link-line > a:link {
+	color: powderblue;
+}
+.link-line > a:active {
+	color: yellow;
+}
+.link-line > a:visited {
+	color: pink;
+}
+.link-line > a:hover {
+	color: red;
+}
 
 /*
 	Tech / Contact
@@ -214,6 +234,10 @@ body {
 .legalese {
 	font-size: 12px;
 }
+
+/*
+	Links
+*/
 .outer-link:link {
 	color: blue;
 	text-decoration: underline;
