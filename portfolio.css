@@ -139,6 +139,9 @@ body {
 	-webkit-box-shadow: 3px 3px 5px 6px #ccc;
 	box-shadow:         3px 3px 5px 6px #ccc;
 }
+.project:hover, .project.hover {
+  display:block;
+}
 .project figcaption {
 	text-align: center;
 	color: white;
@@ -147,7 +150,7 @@ body {
 	top: 50%;
 	transform: translateY(-50%);
 	width : 100%;
-	padding: 10px 0;
+	padding: 10px 5px;
 
 	z-index: 2;
 }

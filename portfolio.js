@@ -2,13 +2,26 @@ var navPosition;
 var jHeader;
 
 function projectHoverIn(event) {
-	jQuery(jQuery(event.currentTarget).find(".blurry")).removeClass('is-hidden');
-	jQuery(jQuery(event.currentTarget).find("figcaption")).removeClass('is-hidden');
+	addProjectFocus(jQuery(event.currentTarget));
 }
 
 function projectHoverOut(event) {
-	jQuery(jQuery(event.currentTarget).find(".blurry")).addClass('is-hidden');
-	jQuery(jQuery(event.currentTarget).find("figcaption")).addClass('is-hidden');
+	removeProjectFocus(jQuery(event.currentTarget));
+}
+
+function removeProjectFocus(nodes) {
+	nodes.find(".blurry").addClass('is-hidden');
+	nodes.find("figcaption").addClass('is-hidden');
+	nodes.removeClass('hover');
+}
+
+function addProjectFocus(nodes) {
+	nodes.find(".blurry").removeClass('is-hidden');
+	nodes.find("figcaption").removeClass('is-hidden');
+	nodes.addClass('hover');
+
+	// there can only be one*
+	removeProjectFocus(jQuery('.project').not(nodes));
 }
 
 function onScroll() {
@@ -21,12 +34,29 @@ function onScroll() {
 	}
 }
 
+// http://knackforge.com/blog/karalmax/how-deal-hover-touch-screen-devices
+function onTouchStart(event) {
+	'use strict';
+
+	var link = jQuery(event.currentTarget); //preselect the link
+	if (link.hasClass('hover')) {
+		return true;
+	}
+	else {
+		addProjectFocus(link);
+		event.preventDefault();
+		return false; //extra, and to make sure the function has consistent return points
+	}
+}
+
 // to be done when the page is ready
 jQuery(document).ready(function() {
 	var projects = jQuery(".project");
 	projects.hover(projectHoverIn, projectHoverOut);
 
-	jHeader = jQuery("#header")
+	projects.on("touchstart", onTouchStart);
+
+	jHeader = jQuery("#header");
 	navPosition = jHeader.offset().top;
 	jQuery(window).scroll(onScroll);
 });
