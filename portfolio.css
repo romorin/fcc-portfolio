@@ -195,7 +195,7 @@ body {
 .tech-category {
 	position: relative;
 	text-align: center;
-	min-height: 300px;
+	min-height: 350px;
 }
 .tech-category > * {
 	margin: 20px 10%;
